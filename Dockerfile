@@ -21,4 +21,4 @@ COPY --from=builder /usr/local/bin/udpxy /usr/local/bin/udpxy
 COPY --from=builder /usr/local/bin/udpxrec /usr/local/bin/udpxrec
 
 ENTRYPOINT ["/usr/local/bin/udpxy"]
-CMD ["-v", "-T", "-p", "5893"]
+CMD ["-v", "-T", "-p", "5893", "-S", "-c", "500"]
